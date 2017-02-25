@@ -42,7 +42,9 @@ class CassiniViewController: UIViewController, UISplitViewControllerDelegate {
     // This code doesn't collapse the secondary view controller on the primary need to fix later
     //
     
-    func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController: UIViewController, ontoPrimaryViewController primaryViewController: UIViewController) -> Bool {
+    func  splitViewController(_ splitViewController: UISplitViewController,
+                              collapseSecondary secondaryViewController: UIViewController,
+                              onto primaryViewController: UIViewController) -> Bool{
         if primaryViewController.contentViewController == self {
             if let ivc = secondaryViewController.contentViewController as? ImageViewController, ivc.imageURL == nil {
                 return true
