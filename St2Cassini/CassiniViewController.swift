@@ -28,6 +28,8 @@ class CassiniViewController: UIViewController, UISplitViewControllerDelegate {
             let imageName = sender.currentTitle
             ivc.imageURL = DemoURL.NASAImageNamed(imageName: imageName)
             ivc.title = imageName
+        } else {
+            performSegue(withIdentifier: Storyboard.ShowImageSegue, sender: sender)
         }
     }
     

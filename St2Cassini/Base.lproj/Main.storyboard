@@ -114,6 +114,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cassini" id="RPg-RJ-Uvo"/>
+                    <connections>
+                        <segue destination="s9Q-CI-4pb" kind="show" identifier="Show Image" id="GVb-EC-5dc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gik-8T-oLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,4 +159,7 @@
             <point key="canvasLocation" x="72.799999999999997" y="424.13793103448279"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GVb-EC-5dc"/>
+    </inferredMetricsTieBreakers>
 </document>
